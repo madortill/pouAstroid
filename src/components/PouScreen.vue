@@ -253,21 +253,21 @@ touchMove(ev) {
   position: absolute;   
   height: 28vh;
   left: -13vw;
-  bottom: 32vh;
+  bottom: 28vh;
 }
 
 .emo {
   position: absolute;
   height: 28vh;
   left: 22vw;
-  bottom: 28vh;
+  bottom: 24vh;
 }
 
 .old {
   position: absolute;
   height: 28vh;
   left: 24vw;
-  bottom: 32vh;
+  bottom: 28vh;
   z-index: 2;
 }
 
