@@ -202,13 +202,13 @@ touchMove(ev) {
       return `${document.location.href}/animations/${this.astroid}/${this.astroid}.html`;
     },
     playerImg() {
-      return `${document.location.href}media/pouScreen/${this.astroid}/${this.astroid}.svg`;
+      return `${document.location.href}/src/assets/media/pouScreen/${this.astroid}/${this.astroid}.svg`;
     },
     backgroundImg() {
-      return `${document.location.href}media/pouScreen/${this.astroid}/${this.astroid}Room.png`;
+      return `${document.location.href}/src/assets/media/pouScreen/${this.astroid}/${this.astroid}Room.png`;
     },
     playerItem() {
-      return `${document.location.href}media/pouScreen/${this.astroid}/item.png`;
+      return `${document.location.href}/src/assets/media/pouScreen/${this.astroid}/item.png`;
     }
   },
   created() {
