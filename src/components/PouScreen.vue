@@ -45,11 +45,20 @@
 </template>
 <script>
 import IconsForPou from '@/components/IconsForPou.vue';
+
+// importing pictures
+import baby from "@/assets/media/pouScreen/baby/baby.svg"
+import babyRoom from "@/assets/media/pouScreen/baby/babyRoom.png"
+import babyItem from "@/assets/media/pouScreen/baby/item.png"
+
 export default {
   name: "pou-screen",
   props: ['astroid'],
   data() {
     return {
+      baby,
+      babyRoom,
+      babyItem,
       showAnimation1: true,
       showAnimation2: false,
       readInstructions: false,
@@ -194,16 +203,16 @@ touchMove(ev) {
   },
   computed: {
     playerAnimation() {
-      return `/animations/${this.astroid}/${this.astroid}.html`;
+      return `${document.location.href}/animations/${this.astroid}/${this.astroid}.html`;
     },
     playerImg() {
-      return `@/assets/media/pouScreen/${this.astroid}/${this.astroid}.svg`;
+      return this[this.astroid];
     },
     backgroundImg() {
-      return `@/assets/media/pouScreen/${this.astroid}/${this.astroid}Room.png`;
+      return this[`${this.astroid}Room`];
     },
     playerItem() {
-      return `@/assets/media/pouScreen/${this.astroid}/item.png`;
+      return this[`${this.astroid}Item`];;
     }
   },
   created() {
