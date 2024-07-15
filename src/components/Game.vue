@@ -88,7 +88,7 @@ export default {
         const cell = document.getElementById(cellId);
 
         if (!cell.classList.contains("randomCell")) {
-          cell.style.backgroundImage = `url(src/assets/media/pouScreen/${this.astroid}/${this.astroid}.svg)`;
+          cell.style.backgroundImage = `url(@/assets/media/pouScreen/${this.astroid}/${this.astroid}.svg)`;
           cell.style.backgroundSize = "100% 100%";
           cell.style.backgroundRepeat = "no-repeat";
           cell.classList.add("randomCell");
@@ -179,7 +179,7 @@ export default {
   animation: none !important;
 }
 .bomb {
-  background-image: url(src/assets/media/pouScreen/bomb.gif) !important;
+  background-image: url(@/assets/media/pouScreen/bomb.gif) !important;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
