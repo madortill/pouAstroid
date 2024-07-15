@@ -1,7 +1,7 @@
 <template>
   <div id="pou-screen" :style="{ 'background-image': 'url(' + backgroundImg + ')' }">
     <iframe class="animation2" v-show="showAnimation2" :src="playerAnimation"></iframe>
-    <iframe class="animation" v-if="showAnimation1" src="/animations/preloader/preloader.html"></iframe>
+    <iframe class="animation" v-if="showAnimation1" :src="preloader"></iframe>
     <div v-else>
       <icons-for-pou :age="age" :level="level" v-show="!showAnimation2"></icons-for-pou>
        <audio ref="audio">
@@ -193,6 +193,9 @@ touchMove(ev) {
     }
   },
   computed: {
+    preloader() {
+      return `${document.location.href}/animations/preloader/preloader.html`
+    },
     playerAnimation() {
       return `${document.location.href}/animations/${this.astroid}/${this.astroid}.html`;
     },
