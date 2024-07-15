@@ -253,21 +253,21 @@ touchMove(ev) {
   position: absolute;   
   height: 28vh;
   left: -13vw;
-  bottom: 28vh;
+  bottom: 24vh;
 }
 
 .emo {
   position: absolute;
   height: 28vh;
   left: 22vw;
-  bottom: 24vh;
+  bottom: 20vh;
 }
 
 .old {
   position: absolute;
   height: 28vh;
   left: 24vw;
-  bottom: 28vh;
+  bottom: 24vh;
   z-index: 2;
 }
 
@@ -290,7 +290,7 @@ touchMove(ev) {
 #bubbles {
   position: absolute;
   right: 19vw;
-  bottom: 28vh;
+  bottom: 20vh;
   width: 60vw;
   height: 60vw;
   display: none;
@@ -299,7 +299,7 @@ touchMove(ev) {
 .oldItem {
   position: absolute;
   left: 21vw;
-  bottom: 27vh;
+  bottom: 15vh;
   height: 16vh;
   z-index: 1;
   rotate: -24deg;
