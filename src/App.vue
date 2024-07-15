@@ -17,7 +17,7 @@ export default {
   name: "app",
   data() {
     return {
-      page: 3,
+      page: 4,
       age: "baby" , 
     }
   },

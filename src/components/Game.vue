@@ -88,7 +88,7 @@ export default {
         const cell = document.getElementById(cellId);
 
         if (!cell.classList.contains("randomCell")) {
-          cell.style.backgroundImage = `url(/pouScreen/${this.astroid}/${this.astroid}.svg)`;
+          cell.style.backgroundImage = `url(${document.location.href}/pouScreen/${this.astroid}/${this.astroid}.svg)`;
           cell.style.backgroundSize = "100% 100%";
           cell.style.backgroundRepeat = "no-repeat";
           cell.classList.add("randomCell");
